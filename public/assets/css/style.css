@@ -23,10 +23,31 @@ body {
     width: 90vw;
     height: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-self: center;
     margin: 10px;
+}
+
+.cria-materia {
+    display: flex;
+    justify-content: center;
+}
+
+.input-nova-materia {
+    width: 200px;
+}
+
+.materias {
+    color: rgb(230 230 230);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+input {
+    margin: 5px;
+    width: 50px;
 }
 
 .foot {
@@ -43,3 +64,4 @@ body {
     padding-top: 200px;
     padding-bottom: 200px;
 }
+
