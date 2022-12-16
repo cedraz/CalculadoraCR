@@ -1,5 +1,5 @@
-export { novaMateria }
-import { media } from "./media";
+import { media } from "./media.js";
+
 function novaMateria(nome, divPai) {
     const table = document.createElement('table');
     const tr = document.createElement('tr');
@@ -16,11 +16,13 @@ function novaMateria(nome, divPai) {
 
     nomeMateria.innerHTML = nome
     const array = [nomeMateria, p1, p2, p3, pe1, pe2, pe3, ch];
-
+    
     for (let tag of array) {
         tr.appendChild(tag)
     }
-
+    
     table.appendChild(tr);
     divPai.appendChild(table);
 }
+
+export { novaMateria }
