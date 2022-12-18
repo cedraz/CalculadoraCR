@@ -6,4 +6,4 @@ const criaMateria = document.querySelector('.botao-nova-materia');
 
 criaMateria.addEventListener('click', () => {
     novaMateria(inputNovaMateria.value, materias);
-})
+});

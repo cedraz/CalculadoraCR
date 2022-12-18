@@ -1,7 +1,7 @@
 import { media } from "./media.js";
 
 function novaMateria(nome, divPai) {
-    const table = document.createElement('table');
+    const table = document.createElement('form');
     const tr = document.createElement('tr');
     const nomeMateria = document.createElement('td');
     const p1 = document.createElement('input');
