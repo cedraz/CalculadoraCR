@@ -6,4 +6,16 @@ const criaMateria = document.querySelector('.botao-nova-materia');
 
 criaMateria.addEventListener('click', () => {
     novaMateria(inputNovaMateria.value, materias);
+    inputNovaMateria.value = ""
+});
+
+criaMateria.addEventListener('keypress', (e) => {
+    e.preventDefault();
+    if (e.keyCode === "13") {
+        novaMateria(inputNovaMateria.value, materias);
+        inputNovaMateria.value = ""
+    } else {
+        return;
+    }
+    
 });

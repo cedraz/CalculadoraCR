@@ -64,10 +64,6 @@ input {
     border-radius: 5px;
 }
 
-tr {
-    margin: 5px 0 5px 0;
-}
-
 input[type=number]::-webkit-inner-spin-button { 
     -webkit-appearance: none;
     
