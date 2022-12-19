@@ -19,6 +19,10 @@ function novaMateria(nome, divPai) {
     
     tr.appendChild(nomeMateria)
     for (let tag of array) {
+        tag.classList.add('input-materia');
+        if (tag !== ch) {
+            tag.maxLength = "10"
+        }
         tag.type = "number"
         tr.appendChild(tag);
     }
