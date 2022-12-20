@@ -1,28 +1,38 @@
-import { media } from "./media.js";
+export { novaMateria }
 
 function novaMateria(nome, divPai) {
-    const table = document.createElement('table');
     const tr = document.createElement('tr');
-    const nomeMateria  =document.createElement('td');
-    const p1  =document.createElement('input');
-    const p2  =document.createElement('input');
-    const p3  =document.createElement('input');
-    const pe1  =document.createElement('input');
-    const pe2  =document.createElement('input');
-    const pe3  =document.createElement('input');
-    const ch  =document.createElement('input');
+    const nomeMateria = document.createElement('td');
+    const dados = document.createElement('td')
+    const p1 = document.createElement('input');
+    const p2 = document.createElement('input');
+    const p3 = document.createElement('input');
+    const pe1 = document.createElement('input');
+    const pe2 = document.createElement('input');
+    const pe3 = document.createElement('input');
+    const ch = document.createElement('input');
 
-    const mediaDaMateria = media([p1.value, p2.value, p3.value], [pe1.value, pe2.value, pe3.value])
+    nomeMateria.innerHTML = nome;
+    
+    tr.classList.add('materia');
+    dados.classList.add
+    p1.classList.add('p1');
+    p2.classList.add('p2');
+    p3.classList.add('p3');
+    pe1.classList.add('pe1');
+    pe2.classList.add('pe2');
+    pe3.classList.add('pe3');
+    ch.classList.add('ch');
 
-    nomeMateria.innerHTML = nome
-    const array = [nomeMateria, p1, p2, p3, pe1, pe2, pe3, ch];
+    const array = [p1, p2, p3, pe1, pe2, pe3, ch];
     
     for (let tag of array) {
-        tr.appendChild(tag)
+        tag.classList.add('input-materia');
+        tag.type = "number";
+        dados.appendChild(tag);
     }
     
-    table.appendChild(tr);
-    divPai.appendChild(table);
+    tr.appendChild(nomeMateria);
+    tr.appendChild(dados);
+    divPai.appendChild(tr);
 }
-
-export { novaMateria }
