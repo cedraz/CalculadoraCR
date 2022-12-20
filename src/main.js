@@ -34,7 +34,6 @@ function pegaValores() {
         let media = 0
         
         for (let input of td.childNodes[1].childNodes) {
-            
             valoresDosInputs.push(input.value);
             media = calculaMedia(valoresDosInputs.slice(0,3), valoresDosInputs.slice(3, 6));
         }
@@ -61,7 +60,10 @@ function calculaCR() {
 
 botaoCalculaCR.addEventListener('click', () => {
     const CR = calculaCR();
-    CR[1] = bubbleSort(CR[1])
+    CR[1] = bubbleSort(CR[1].map((elem) => {
+        return Number(elem)
+    }))
+    
     divCR.innerHTML = `
         Seu CR foi de: ${CR[0]} <br>
         Suas médias foram: ${CR[1]}
