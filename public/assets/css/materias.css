@@ -1,0 +1,35 @@
+.materias {
+    color: rgb(230 230 230);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cabecalho {
+    display: flex;
+    font-size: 17px;
+    justify-content: space-between;
+}
+
+.materia {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.nomeDaMateria {
+    
+}
+
+.valores {
+    
+}
+
+.input-materia {
+    width: 70px;
+    font-size: 0.8em;
+    margin: 0 10px 0 10px;
+}
+
+
+
