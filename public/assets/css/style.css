@@ -50,7 +50,12 @@ body {
     color: rgb(230 230 230);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.materia {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -69,12 +74,22 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .input-materia {
+    width: 70px;
     font-size: 0.8em;
     margin: 0 10px 0 10px;
+    justify-content: space-between;
 }
 
 tr {
     margin: 5px;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    font-size: 17px;
+    justify-content: space-between;
+    
 }
 
 button {

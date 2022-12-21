@@ -10,17 +10,19 @@ const divCR = document.querySelector('.cr');
 
 let nomeDaMateria = ""
 let materias = [];
+let cabecalho = true
 
 criaMateria.addEventListener('click', () => {
     nomeDaMateria = inputNovaMateria.value;
-    novaMateria(nomeDaMateria, divMaterias);
+    novaMateria(nomeDaMateria, divMaterias, cabecalho);
+    cabecalho = false
     inputNovaMateria.value = "";
 });
 
 document.body.addEventListener('keypress', (e) => {
     nomeDaMateria = inputNovaMateria.value;
     if (e.key === "Enter") {
-        novaMateria(inputNovaMateria.value, divMaterias);
+        novaMateria(inputNovaMateria.value, divMaterias, cabecalho);
         inputNovaMateria.value = "";
     }
 });
